@@ -5,15 +5,13 @@
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	char 1 = 97;
+	char letter;
 
-	while (1 <= 122)
-	{
-		putchar(1);
-		++1;
-	}
-	putchar(10);
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
+	putchar('/n');
 	return (0);
 }
