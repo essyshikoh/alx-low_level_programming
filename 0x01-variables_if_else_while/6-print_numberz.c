@@ -5,14 +5,14 @@
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	char n;
+	int n;
 
-	for (n = 'z'; n <= 'a'; --n)
+	for (n = '0'; n <= '9'; ++n)
 		putchar(n);
 
-	putchar(10);
+	putchar('\n');
+
 	return (0);
 }
