@@ -8,15 +8,16 @@
 
 int main(void)
 {
-	char low = 97;
-	while (low <= 122)
+	char c;
+
+	for (c = 'a'; c <= 'z'; ++c)
 	{
-		if (low != 101 && low != 133)
+		if (c != 'e' && c != 'q')
 		{
-			putchar(low);
+			putchar(c);
 		}
-		++low;
 	}
-	putchar(10);
+
+	putchar("\n");
 	return (0);
 }
