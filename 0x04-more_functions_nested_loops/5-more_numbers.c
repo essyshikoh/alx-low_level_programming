@@ -1,28 +1,23 @@
 #include "main.h"
 /**
  * more_numbers - function
+ * Return: 0
  */
+
 void more_numbers(void)
 {
-	int n = 48;
-	int l = 0;
-	int reset = 0;
+	int number1, number2;
 
-	while (l < 10)
+	for (number1 = 0; number1 < 10; number1++)
 	{
-		while (n <= 62)
+		for (number2 = 0; number2 <= 14; number2++)
 		{
-			if (n > 57)
+			if (number2 > 9)
 			{
-				reset = 10;
-				_putchar(49);
+				_putchar((number2 / 10) + '0');
 			}
-			_putchar(n - reset);
-			n++;
+			_putchar((number2 % 10) + '0');
 		}
-		n = 48;
-		reset = 0;
-		l++;
-		-putchar(10);
+		_putchar(10);
 	}
 }
