@@ -12,7 +12,7 @@ void more_numbers(void)
 	{
 		while (n <= 62)
 		{
-			if (n < 57)
+			if (n > 57)
 			{
 				reset = 10;
 				_putchar(49);
