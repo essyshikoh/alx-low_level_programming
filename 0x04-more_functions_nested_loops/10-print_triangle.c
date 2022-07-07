@@ -12,7 +12,8 @@ void print_triangle(int size)
 	int row = 0;
 	int t;
 
-	if (size < 0)
+
+	if (size > 0)
 	{
 		while (row < size)
 		{
