@@ -2,18 +2,20 @@
 #include "main.h"
 /**
  * print_array - function
- *  @a: pointer o
+ * @a: array
+ *  @a: pointer of elements to be printed
+ *  Description: prints a string, followed by a new line, to stdout.
+ *  Return: void
  */
 void print_array(int *a, int n)
 {
-	int i = 0;
+	int i;
 
-	if (n > 0)
+	for (i = 0; i < n; i++)
 	{
-		while (i < n - 1)
-			printf("%d, ", a[i++]);
-		printf("%d\n", a[i]);
+		if (i > 0)
+			printf(", ");
+		printf("%d", a[i]);
 	}
-	else
-		printf("\n");
+	printf("\n");
 }

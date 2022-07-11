@@ -1,14 +1,18 @@
 #include "main.h"
 
+/**
+ * _strlen - function
+ * @s: pointer of parameter
+ *  Return: return n's value
+ */
 int _strlen(char *s)
 {
 	int n = 0;
 
-	 while (*s != '\0')
-	 {
-		 n = n + 1;
-		 s = s + 1;
-	 }
+	while (s[n] != '\0')
+	{
+		n++;
+	}
 
-	 return(n);
+	return (n);
 }
