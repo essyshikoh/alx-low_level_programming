@@ -1,1 +1,1 @@
-Static libraries in c
+This repository has evrything on static libraries
