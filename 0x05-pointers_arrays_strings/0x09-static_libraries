@@ -5,7 +5,7 @@
  * @n: parameter of the funtion
  * Return: the absolute value
  */
-int _atoi(char *s);
+int _isdigit(int c);
 {
 	return (0);
 }
