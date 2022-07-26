@@ -6,3 +6,8 @@
  * Return: the absolute value
  */
 int _atoi(char *s);
+{
+	return (strlen(str));
+
+}
+
